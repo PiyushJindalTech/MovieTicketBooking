@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 using BeMoviesBooking;
 using System.Data;
 
-namespace MovieBooking.User
+namespace MovieBooking.Admin.Dashboard
 {
-    public partial class MoviesList : System.Web.UI.Page
+    public partial class ProductList : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -19,8 +19,8 @@ namespace MovieBooking.User
                 DataSet objDS = new DataSet();
                 BeMovieBooking objMovieBooking = new BeMovieBooking();
                 objDS = objMovieBooking.BeGetMovies(ref _Error);
-                rptMovies.DataSource = objDS;
-                rptMovies.DataBind();
+                Repeater1.DataSource = objDS;
+                Repeater1.DataBind();
             }
             catch (Exception ex)
             {

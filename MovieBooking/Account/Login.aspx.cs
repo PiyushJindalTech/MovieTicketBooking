@@ -32,6 +32,7 @@ namespace MovieBooking.Account
                     if (objDS.Tables[0].Rows.Count > 0)
                     {
                         string Name = Convert.ToString(objDS.Tables[0].Rows[0]["Name"]);
+                        Session["CustomerID"] = Convert.ToString(objDS.Tables[0].Rows[0]["CustomerID"]);
                         Session["Login_Name"] = Name;
                         Response.Redirect("~/User/MoviesList.aspx");
                     }

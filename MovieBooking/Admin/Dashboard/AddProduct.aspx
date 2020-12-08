@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" EnableEventValidation="false" EnableViewStateMac="false" EnableViewState="false" CodeBehind="AddProduct.aspx.cs" Inherits="MovieBooking.Account.AddMovies" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" EnableEventValidation="false" EnableViewStateMac="false" EnableViewState="false" CodeBehind="AddProduct.aspx.cs" Inherits="MovieBooking.Account.AddProduct" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../plugins/summernote/summernote-bs4.css" rel="stylesheet" />
@@ -12,16 +12,16 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="form-group">
-                            <label>Movie Name</label>
-                            <asp:TextBox ID="txtMovieName" runat="server" CssClass="form-control" placeholder="Enter Movie Name"></asp:TextBox>
+                            <label>Product Name</label>
+                            <asp:TextBox ID="txtProductName" runat="server" CssClass="form-control" placeholder="Enter Product"></asp:TextBox>
                         </div>
 
-                        <div class="form-group">
+                      <%--  <div class="form-group">
                             <label>Movie Director</label>
-                            <asp:TextBox ID="txtMovieDirector" runat="server" CssClass="form-control" placeholder="Enter Movie Director Name"></asp:TextBox>
-                        </div>
+                            <asp:TextBox ID="txtProductCategory" runat="server" CssClass="form-control" placeholder="Enter Movie Director Name"></asp:TextBox>
+                        </div>--%>
 
-                        <div class="form-group">
+                      <%--  <div class="form-group">
                             <label>Movie Actors</label>
                             <asp:TextBox ID="txtMovieActors" runat="server" CssClass="form-control" placeholder="Enter Movie Actor and Actress Name"></asp:TextBox>
                         </div>
@@ -35,13 +35,13 @@
                                 <label>End Time</label>
                                 <asp:TextBox ID="txtEndTime" runat="server" CssClass="form-control" type="time"></asp:TextBox>
                             </div>
-                        </div>
+                        </div>--%>
 
                         <div class="form-group">
-                            <label>Movie Image</label>
+                            <label>Product Image</label>
                             <div class="input-group">
                                 <div class="custom-file">
-                                    <asp:FileUpload ID="flpMovieImage" runat="server" class="custom-file-input" />
+                                    <asp:FileUpload ID="flpProduct" runat="server" class="custom-file-input" />
                                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                                 </div>
                                 <div class="input-group-append">
@@ -51,8 +51,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Movie Summary</label>
-                            <asp:TextBox ID="txtMovieSummary" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" placeholder="Enter Movie Movie Summary"></asp:TextBox>
+                            <label>Product Summary</label>
+                            <asp:TextBox ID="txtProductSummary" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" placeholder="Enter Movie Movie Summary"></asp:TextBox>
                         </div>
 
                         <div class="form-group">

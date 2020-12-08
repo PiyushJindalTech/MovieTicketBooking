@@ -17,16 +17,14 @@
                         <h1>Movies</h1>
                     </div>
 
-                    <asp:Repeater runat="server" ID="Repeater1">
+                    <asp:Repeater runat="server" ID="rptMovies">
                         <ItemTemplate>
 
                             <div class="card-view">
                                 <div class="card-header">
                                     <div class="card-header-icon" style="height: 100%">
                                         <asp:Image runat="server" class="image movie-img" Style="max-height: 100%" src='<%# Eval("ImagePath") %>' />
-                                        <a href="#">
-                                            <i class="material-icons header-icon fa"></i>
-                                        </a>
+                                     
                                     </div>
                                 </div>
 
@@ -54,7 +52,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <asp:Button ID="btnBook" runat="server" CssClass="btn btn-primary" Text="Book Now" />
+                                        <asp:LinkButton ID="btnBook" runat="server" CssClass="btn btn-primary" Text="Book Now" href='<%# "Booking.aspx?MovieID=" + Eval("MovieID")%>' />
                                     </div>
                                 </div>
                             </div>

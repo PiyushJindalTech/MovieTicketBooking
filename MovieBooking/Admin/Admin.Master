@@ -24,7 +24,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="../index3.html" class="nav-link">Home</a>
+                <a href="CustomerList.aspx" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
@@ -186,15 +186,16 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="../index2.html" class="nav-link">
+                                <a href="ProductList.aspx" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v2</p>
+                                    <p>Products</p>
                                 </a>
                             </li>
+
                             <li class="nav-item">
-                                <a href="../index3.html" class="nav-link">
+                                <a href="CustomerList.aspx" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v3</p>
+                                    <p>Customers</p>
                                 </a>
                             </li>
                         </ul>
@@ -366,21 +367,9 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="../forms/advanced.html" class="nav-link">
+                                <a href="AddProduct.aspx" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Advanced Elements</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../forms/editors.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Editors</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../forms/validation.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Validation</p>
+                                    <p>Add Product</p>
                                 </a>
                             </li>
                         </ul>
@@ -414,7 +403,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-header">EXAMPLES</li>
+                   <%-- <li class="nav-header">EXAMPLES</li>
                     <li class="nav-item">
                         <a href="../calendar.html" class="nav-link">
                             <i class="nav-icon far fa-calendar-alt"></i>
@@ -685,14 +674,13 @@
                             <i class="nav-icon far fa-circle text-info"></i>
                             <p>Informational</p>
                         </a>
-                    </li>
+                    </li>--%>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
     </aside>
-    </form>
     <asp:ContentPlaceHolder runat="server" ID="BodyContent"></asp:ContentPlaceHolder>
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">

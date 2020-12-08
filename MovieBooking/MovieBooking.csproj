@@ -109,12 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\AdminLogin.aspx" />
+    <Content Include="Admin\Dashboard\AddProduct.aspx" />
     <Content Include="Admin\Dashboard\AddMovies.aspx" />
-    <Content Include="Account\AdminDashboard.aspx" />
     <Content Include="Account\AdminRegister.aspx" />
+    <Content Include="Admin\Dashboard\ProductList.aspx" />
     <Content Include="css\booking.css" />
-    <Content Include="Account\DashBoard.aspx" />
-    <Content Include="Account\SeatBooking.aspx" />
     <Content Include="Admin\css\adminlte.css" />
     <Content Include="Admin\css\adminlte.min.css" />
     <Content Include="Admin\css\alt\adminlte.components.css" />
@@ -1894,7 +1893,6 @@
     <Content Include="About.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -2157,6 +2155,13 @@
     <Compile Include="Account\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Dashboard\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Dashboard\AddMovies.aspx.cs">
       <DependentUpon>AddMovies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2171,33 +2176,12 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Account\AdminDashboard.aspx.cs">
-      <DependentUpon>AdminDashboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\AdminDashboard.aspx.designer.cs">
-      <DependentUpon>AdminDashboard.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\AdminRegister.aspx.cs">
       <DependentUpon>AdminRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\AdminRegister.aspx.designer.cs">
       <DependentUpon>AdminRegister.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\DashBoard.aspx.cs">
-      <DependentUpon>DashBoard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\DashBoard.aspx.designer.cs">
-      <DependentUpon>DashBoard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\SeatBooking.aspx.cs">
-      <DependentUpon>SeatBooking.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\SeatBooking.aspx.designer.cs">
-      <DependentUpon>SeatBooking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Dashboard\Compose.aspx.cs">
       <DependentUpon>Compose.aspx</DependentUpon>
@@ -2219,6 +2203,13 @@
     </Compile>
     <Compile Include="Admin\Dashboard\CustomerList.aspx.designer.cs">
       <DependentUpon>CustomerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Dashboard\MoviesList.aspx.cs">
       <DependentUpon>MoviesList.aspx</DependentUpon>
@@ -2264,13 +2255,6 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">

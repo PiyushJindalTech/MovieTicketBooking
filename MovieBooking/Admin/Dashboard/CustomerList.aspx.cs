@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace MovieBooking.Admin.Dashboard
 {
@@ -11,7 +12,23 @@ namespace MovieBooking.Admin.Dashboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataSet objDS = new DataSet();
+            string _Error = "";
+            try
+            {
+                if (true)
+                {
+                    BeMoviesBooking.BeMovieBooking objBe = new BeMoviesBooking.BeMovieBooking();
+                    objDS = objBe.BeGetCustomers(ref _Error);
+                    grdCustomerList.DataSource = objDS;
+                    grdCustomerList.DataBind();
+                }
+                
+            }
+            catch(Exception ex)
+            {
 
+            }
         }
     }
 }

@@ -59,6 +59,6 @@ D:\ImagineUpline\MovieBooking\MovieBooking\bin\DotNetOpenAuth.AspNet.xml
 D:\ImagineUpline\MovieBooking\MovieBooking\bin\Microsoft.AspNet.Membership.OpenAuth.xml
 D:\ImagineUpline\MovieBooking\MovieBooking\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\ImagineUpline\MovieBooking\MovieBooking\bin\System.Net.Http.xml
+D:\ImagineUpline\MovieBooking\MovieBooking\obj\Debug\MovieBooking.csprojResolveAssemblyReference.cache
 D:\ImagineUpline\MovieBooking\MovieBooking\obj\Debug\MovieBooking.dll
 D:\ImagineUpline\MovieBooking\MovieBooking\obj\Debug\MovieBooking.pdb
-D:\ImagineUpline\MovieBooking\MovieBooking\obj\Debug\MovieBooking.csprojResolveAssemblyReference.cache

@@ -14,7 +14,7 @@ using BeMoviesBooking;
 
 namespace MovieBooking.Account
 {
-    public partial class AddMovies : System.Web.UI.Page
+    public partial class AddProduct : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,24 +27,23 @@ namespace MovieBooking.Account
             try
             {
                 BeMovieBooking objMovieBooking = new BeMovieBooking();
-                TimeSpan movieDuration = (Convert.ToDateTime(txtEndTime.Text.Trim()) - Convert.ToDateTime(txtStartTime.Text.Trim()));
-                AddMovie objAddMovie = new AddMovie
+                Product objAddProduct = new Product
                 {
-                    MovieName = txtMovieName.Text.Trim(),
-                    MovieDirector = txtMovieDirector.Text.Trim(),
-                    MovieActors = txtMovieActors.Text.Trim(),
-                    MovieSummary = txtMovieSummary.Text.Trim(),
-                    MovieImageName = Convert.ToString(Session["FileName"]),
-                    MovieDuration = Convert.ToString(movieDuration.Hours)
+                    ProductName = txtProductName.Text.Trim(),
+                    //MovieDirector = txtMovieDirector.Text.Trim(),
+                    //MovieActors = txtMovieActors.Text.Trim(),
+                    ProductSummary = txtProductSummary.Text.Trim(),
+                    ProductImageName = Convert.ToString(Session["FileName"]),
+                    //MovieDuration = timeDuration.ToString()
                 };
-                XmlSerializer xmlserializer = new XmlSerializer(objAddMovie.GetType());
+                XmlSerializer xmlserializer = new XmlSerializer(objAddProduct.GetType());
                 var stringWriter = new StringWriter();
                 using (var writer = XmlWriter.Create(stringWriter))
                 {
-                    xmlserializer.Serialize(writer, objAddMovie);
+                    xmlserializer.Serialize(writer, objAddProduct);
                     movieDetails = stringWriter.ToString();
                 }
-                string tStatus = objMovieBooking.BeAddMovie(movieDetails);
+                string tStatus = objMovieBooking.BeAddProduct(movieDetails);
 
             }
 
@@ -58,16 +57,18 @@ namespace MovieBooking.Account
         {
             try
             {
-                if (flpMovieImage.HasFile)
+                if (flpProduct.HasFile)
                 {
-                    string fileExtenstion = System.IO.Path.GetExtension(flpMovieImage.FileName);
-                    if (fileExtenstion == ".jpg" || fileExtenstion == ".png")
+                    string fileExtenstion = System.IO.Path.GetExtension(flpProduct.FileName);
+                    string movieImagePath = Server.MapPath("~/MovieImages/");
+                    if (fileExtenstion == ".jpg" || fileExtenstion == ".png" || fileExtenstion == ".jpeg")
                     {
-                        string fileName = flpMovieImage.FileName + "_" + DateTime.Now.ToString();
-                        flpMovieImage.SaveAs("~/MovieImages/" + fileName);
-                        Session["FileName"] = fileName;
+                        Random random = new Random();
+                        string fileName = flpProduct.FileName.Replace(fileExtenstion, "") + "_" + random.Next(1000000) + fileExtenstion;
+                        flpProduct.SaveAs(movieImagePath + fileName);
+                        Session["FileName"] = "../../MovieImages/" + fileName;
                     }
-                    if (flpMovieImage.FileBytes.Length <= 20000)
+                    if (flpProduct.FileBytes.Length <= 20000)
                     {
                     }
                 }
@@ -81,14 +82,11 @@ namespace MovieBooking.Account
         }
     }
 
-    public class AddMovie
+    public class Product
     {
-        public string MovieName { get; set; }
-        public string MovieDirector { get; set; }
-        public string MovieActors { get; set; }
-        public string MovieDuration { get; set; }
-        public string MovieImageName { get; set; }
-        public string MovieSummary { get; set; }
+        public string ProductName { get; set; }
+        public string ProductImageName { get; set; }
+        public string ProductSummary { get; set; }
 
     }
 }
