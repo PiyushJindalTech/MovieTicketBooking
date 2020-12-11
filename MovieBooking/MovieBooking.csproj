@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -109,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\AdminLogin.aspx" />
+    <Content Include="Account\ForgotPassword.aspx" />
     <Content Include="Admin\Dashboard\AddProduct.aspx" />
     <Content Include="Admin\Dashboard\AddMovies.aspx" />
     <Content Include="Account\AdminRegister.aspx" />
@@ -1887,13 +1890,15 @@
     <Content Include="Admin\plugins\toastr\toastr.min.css" />
     <Content Include="Admin\plugins\toastr\toastr.min.js" />
     <Content Include="css\admin-login.css" />
+    <Content Include="MailTemplates\CandidateOTP.html" />
     <Content Include="MailTemplates\CandForgotPassword.html" />
     <Content Include="MovieImages\advanture.jpg" />
-    <Content Include="services.aspx" />
-    <Content Include="About.aspx" />
+    <Content Include="Scripts\validation.js" />
+    <Content Include="Account\services.aspx" />
+    <Content Include="Account\About.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Account\Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -1965,7 +1970,7 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
-    <Content Include="Default.aspx" />
+    <Content Include="Account\Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="img\undraw_posting_photo.svg" />
@@ -2068,6 +2073,7 @@
     <Content Include="Admin\plugins\sweetalert2-theme-bootstrap-4\bootstrap-4.scss" />
     <Content Include="Admin\plugins\toastr\toastr.js.map" />
     <Content Include="User\Booking.aspx" />
+    <Content Include="User\ProductList.aspx" />
     <Content Include="User\Payment.aspx" />
     <Content Include="User\Site.Master" />
     <Content Include="User\Site.Mobile.Master" />
@@ -2155,6 +2161,13 @@
     <Compile Include="Account\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Dashboard\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2227,19 +2240,19 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="services.aspx.cs">
+    <Compile Include="Account\services.aspx.cs">
       <DependentUpon>services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="services.aspx.designer.cs">
+    <Compile Include="Account\services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\AuthConfig.cs" />
-    <Compile Include="About.aspx.cs">
+    <Compile Include="Account\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
+    <Compile Include="Account\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Login.aspx.cs">
@@ -2257,18 +2270,18 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
+    <Compile Include="Account\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
+    <Compile Include="Account\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Account\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Account\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -2295,6 +2308,13 @@
     </Compile>
     <Compile Include="User\Booking.aspx.designer.cs">
       <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\MoviesList.aspx.cs">
       <DependentUpon>MoviesList.aspx</DependentUpon>

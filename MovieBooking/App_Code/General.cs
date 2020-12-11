@@ -45,17 +45,10 @@ namespace MovieBooking.App_Code
             HttpContext.Current.Response.Redirect("~\\Defalut.aspx", false);
             return;
         }
-        public static void DisplayPopupMessage(string _Message, UpdatePanel updt = null)
+        public static void DisplaySweetAlertPopup( Page page, string title, string message, MessageType messageType)
         {
-            if (updt == null)
-            {
                 Page pg = HttpContext.Current.CurrentHandler as Page;
-                pg.ClientScript.RegisterStartupScript(pg.GetType(), "msg", "displayMessage('" + _Message + "');", true);
-            }
-            else
-            {
-                ScriptManager.RegisterStartupScript(updt, updt.GetType(), "msg", "displayMessage('" + _Message + "');", true);
-            }
+                pg.ClientScript.RegisterStartupScript(page.GetType(), "msg", "Showpop('" + title + "', '" + message + "', '" + messageType + "');", true);
         }
         public static void runJavascriptNew(string script, UpdatePanel updt = null)
         {
@@ -67,23 +60,6 @@ namespace MovieBooking.App_Code
             else
             {
                 ScriptManager.RegisterStartupScript(updt, updt.GetType(), "msg", script, true);
-            }
-        }
-        public static void DisplayPopupMessage(string _message, string _url)
-        {
-            Page pg = HttpContext.Current.CurrentHandler as Page;
-            pg.ClientScript.RegisterStartupScript(pg.GetType(), "msg", "displayMessagewithURL('" + _message + "','" + _url + "');", true);
-        }
-        public static void DisplayPopupMessageRedirect(string _Message, UpdatePanel updt = null)
-        {
-            if (updt == null)
-            {
-                Page pg = HttpContext.Current.CurrentHandler as Page;
-                pg.ClientScript.RegisterStartupScript(pg.GetType(), "msg", "displayMessageRedirect('" + _Message + "');", true);
-            }
-            else
-            {
-                ScriptManager.RegisterStartupScript(updt, updt.GetType(), "msg", "displayMessageRedirect('" + _Message + "');", true);
             }
         }
         public static void DisplayNotification(string _Message, bool isError = false)
@@ -160,5 +136,14 @@ namespace MovieBooking.App_Code
             else
                 return false;
         }
+    }
+
+  
+
+    public enum MessageType
+    {
+        error,
+        success,
+        info
     }
 }

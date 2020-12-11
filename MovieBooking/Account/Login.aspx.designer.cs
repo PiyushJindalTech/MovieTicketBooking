@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MovieBooking.Account {
-    
-    
-    public partial class Login {
-        
+namespace MovieBooking.Account
+{
+
+
+    public partial class Login
+    {
+
         /// <summary>
         /// txtUserName control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
-        
+
         /// <summary>
         /// txtPassword control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
-        
+
         /// <summary>
         /// btnLogin1 control.
         /// </summary>
@@ -38,23 +40,5 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnLogin1;
-        
-        /// <summary>
-        /// txtOTP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOTP;
-        
-        /// <summary>
-        /// btnVerifyOTP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVerifyOTP;
     }
 }

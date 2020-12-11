@@ -162,7 +162,32 @@ namespace BeMoviesBooking.DataAccess
             }
             catch (Exception ex)
             {
-                _Error = ex.Message + Environment.NewLine + ex.StackTrace;
+                _Error = "-4:" + ex.Message + Environment.NewLine + ex.StackTrace;
+            }
+            finally
+            {
+                OpenConn(false);
+            }
+            return ds;
+        }
+        public DataSet beGetUserPassword(string tEmailID,  ref string _Error)
+        {
+            DataSet ds = null;
+            try
+            {
+                OpenConn(true);
+                String query = "usp_GetUserPassword";
+                SqlCommand com = new SqlCommand(query, cn);
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@emailID", tEmailID);
+                ds = new DataSet();
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                da.Fill(ds);
+                _Error = "1";
+            }
+            catch (Exception ex)
+            {
+                _Error = "-4:" + ex.Message + Environment.NewLine + ex.StackTrace;
             }
             finally
             {
@@ -224,7 +249,7 @@ namespace BeMoviesBooking.DataAccess
             #region DataBase
             try
             {
-                string tQuery = "Select Top 0 RID, FirstName, MiddleName, LastName, MobileNo, EmailID, Password, Status, IsAdmin from tbl_Login with (nolock)";
+                string tQuery = "Select Top 0 RID, FirstName, MiddleName, LastName, MobileNo, EmailID, Password, Status, IsAdmin from c with (nolock)";
                 using (objCon = new SqlConnection(ImagineUpline.Global.ConnectionString))
                 {
                     objDA = new SqlDataAdapter(tQuery, objCon);

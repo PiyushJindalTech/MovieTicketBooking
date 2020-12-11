@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using BeMoviesBooking.DataAccess;
+using MovieBooking.App_Code;
 
 namespace MovieBooking.Account
 {
@@ -32,11 +33,15 @@ namespace MovieBooking.Account
                         Session["AdminLogin_Name"] = Name;
                         Response.Redirect("~/Admin/Dashboard/CustomerList.aspx");
                     }
+                    else
+                        General.DisplaySweetAlertPopup(this, "Alert", "Invalid Credations!, please try again", MessageType.info);
                 }
+                else
+                    General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);
             }
             catch(Exception ex)
             {
-
+                General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);
             }
         }
     }

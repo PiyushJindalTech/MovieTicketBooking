@@ -14,10 +14,10 @@ namespace MovieBooking.Account
 {
     public partial class Login : Page
     {
-      
+
         protected void Page_Load(object sender, EventArgs e)
         {
-                   
+
         }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
@@ -36,25 +36,16 @@ namespace MovieBooking.Account
                         Session["Login_Name"] = Name;
                         Response.Redirect("~/User/MoviesList.aspx");
                     }
+                    else
+                        General.DisplaySweetAlertPopup(this, "Alert", "Invalid Credentails!, please try again", MessageType.info);
                 }
+                else
+                    General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);
             }
             catch (Exception ex)
             {
-
+                General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);
             }
-        }
-
-        protected void btnVerifyOTP_Click(object sender, EventArgs e)
-        {
-            if (Session["OTPSenTToUser"] == txtOTP.Text)
-            {
-                //Session["UID"] = Convert.ToString(ds.Tables[0].Rows[0]["rid"]);
-                //Session["UserName"] = Convert.ToString(ds.Tables[0].Rows[0]["FirstName"]) + " " + Convert.ToString(ds.Tables[0].Rows[0]["MidName"]) + " " + Convert.ToString(ds.Tables[0].Rows[0]["LastName"]);
-                //Response.Redirect("MoviesList.aspx");
-            }
-            else
-                Response.Redirect("Login.aspx");
-                
         }
     }
 }

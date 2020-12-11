@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MovieBooking.Account {
-    
-    
-    public partial class AdminRegister {
-        
+namespace MovieBooking.Account
+{
+
+
+    public partial class AdminRegister
+    {
+
         /// <summary>
         /// txtFirstName control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
-        
+
         /// <summary>
         /// txtMiddleName control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMiddleName;
-        
+
         /// <summary>
         /// txtLastName control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
-        
+
         /// <summary>
         /// txtMobileNo control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMobileNo;
-        
+
         /// <summary>
         /// txtEmailID control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmailID;
-        
+
         /// <summary>
         /// txtPassword control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
-        
+
         /// <summary>
         /// txtConfirmPassword control.
         /// </summary>
@@ -74,7 +76,25 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
-        
+
+        /// <summary>
+        /// txtOTP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOTP;
+
+        /// <summary>
+        /// btnGetOTP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnGetOTP;
+
         /// <summary>
         /// btnRegister control.
         /// </summary>

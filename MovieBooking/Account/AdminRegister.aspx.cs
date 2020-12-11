@@ -37,6 +37,11 @@ namespace MovieBooking.Account
         {
             try
             {
+                if (Convert.ToString(Session["Admin_OTP"]) != txtOTP.Text)
+                {
+                    General.DisplaySweetAlertPopup(this, "Error", "Invalid OTP", MessageType.error);
+                }
+
                 string adminDetails = "";
                 Member objMember = new Member();
                 AccountRegistration adminRegistration = new AccountRegistration
@@ -57,24 +62,66 @@ namespace MovieBooking.Account
                     adminDetails = stringWriter.ToString();
                 }
                 string tStatus = objMember.beSaveRegistrationDetails(adminDetails);
+                General.DisplaySweetAlertPopup(this, "Success", "Admin Created Successfully", MessageType.success);
+                Clear();
             }
             catch (Exception ex)
             {
-
+                General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);
             }
 
 
         }
 
+        protected void btnGetOTP_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string mailText = "";
+                txtFirstName.Enabled = false;
+                txtMiddleName.Enabled = false;
+                txtLastName.Enabled = false;
+                txtMobileNo.Enabled = false;
+                txtEmailID.Enabled = false;
+                txtPassword.Enabled = false;
+                txtConfirmPassword.Enabled = false;
+                btnRegister.Visible = true;
+                txtOTP.Enabled = true;
+                btnGetOTP.Visible = false;
+                Random random = new Random();
+                int OTP = random.Next(100000, 1000000);
+
+                Session["Admin_OTP"] = OTP;
+                using (StreamReader sr = new StreamReader(Server.MapPath("~\\MailTemplates\\CandidateOTP.html")))
+                {
+                    mailText = sr.ReadToEnd();
+                    sr.Close();
+                }
+                mailText = mailText.Replace("[CandidateName]", txtFirstName.Text.Trim());
+                mailText = mailText.Replace("[CandidateEmailID]", txtEmailID.Text.Trim());
+                mailText = mailText.Replace("[OTP]", Convert.ToString(OTP));
+                MailSending mailSending = new MailSending();
+                mailSending.SendMailCommon(txtEmailID.Text.Trim(), "", "Movie Theatre OTP", mailText, "", "piyush95ksp@gmail.com");
+                General.DisplaySweetAlertPopup(this, "Success", "OTP sent to registered E-mail ID", MessageType.success);
+            }
+            catch (Exception ex)
+            {
+                General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);
+            }
+        }
 
         protected void Clear()
         {
             txtFirstName.Text = "";
-            txtMiddleName.Text = "";
             txtLastName.Text = "";
-            txtMobileNo.Text = "";
             txtEmailID.Text = "";
             txtPassword.Text = "";
+            txtMobileNo.Text = "";
+            txtConfirmPassword.Text = "";
+            txtOTP.Text = "";
+            btnGetOTP.Visible = true;
+            btnRegister.Visible = false;
+            txtOTP.Enabled = false;
         }
     }
 }

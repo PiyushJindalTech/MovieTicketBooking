@@ -18,9 +18,9 @@ namespace MovieBooking.Admin.Dashboard
             {
                 DataSet objDS = new DataSet();
                 BeMovieBooking objMovieBooking = new BeMovieBooking();
-                objDS = objMovieBooking.BeGetMovies(ref _Error);
-                Repeater1.DataSource = objDS;
-                Repeater1.DataBind();
+                objDS = objMovieBooking.BeGetProducts(ref _Error);
+                rptProduct.DataSource = objDS;
+                rptProduct.DataBind();
             }
             catch (Exception ex)
             {
@@ -30,7 +30,7 @@ namespace MovieBooking.Admin.Dashboard
 
         protected void btnAddMovie_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AddMovies.aspx");
+            Response.Redirect("AddProduct.aspx");
         }
     }
 }

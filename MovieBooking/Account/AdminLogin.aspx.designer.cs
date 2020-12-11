@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MovieBooking.Account {
-    
-    
-    public partial class AdminLogin {
-        
+namespace MovieBooking.Account
+{
+
+
+    public partial class AdminLogin
+    {
+
         /// <summary>
         /// txtEmailID control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmailID;
-        
+
         /// <summary>
         /// txtPassword control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
-        
+
         /// <summary>
         /// btnLogin control.
         /// </summary>

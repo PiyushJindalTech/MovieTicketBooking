@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MovieBooking.User {
-    
-    
-    public partial class Booking {
-        
+namespace MovieBooking.User
+{
+
+
+    public partial class Booking
+    {
+
         /// <summary>
         /// A1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox A1;
-        
+
         /// <summary>
         /// B1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox B1;
-        
+
         /// <summary>
         /// C1 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox C1;
-        
+
         /// <summary>
         /// D1 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox D1;
-        
+
         /// <summary>
         /// E1 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox E1;
-        
+
         /// <summary>
         /// F1 control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox F1;
-        
+
         /// <summary>
         /// A2 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox A2;
-        
+
         /// <summary>
         /// B2 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox B2;
-        
+
         /// <summary>
         /// C2 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox C2;
-        
+
         /// <summary>
         /// D2 control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox D2;
-        
+
         /// <summary>
         /// E2 control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox E2;
-        
+
         /// <summary>
         /// F2 control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox F2;
-        
+
         /// <summary>
         /// A3 control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox A3;
-        
+
         /// <summary>
         /// B3 control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox B3;
-        
+
         /// <summary>
         /// C3 control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox C3;
-        
+
         /// <summary>
         /// D3 control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox D3;
-        
+
         /// <summary>
         /// E3 control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox E3;
-        
+
         /// <summary>
         /// F3 control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox F3;
-        
+
         /// <summary>
         /// A4 control.
         /// </summary>
@@ -182,7 +184,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox A4;
-        
+
         /// <summary>
         /// B4 control.
         /// </summary>
@@ -191,7 +193,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox B4;
-        
+
         /// <summary>
         /// C4 control.
         /// </summary>
@@ -200,7 +202,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox C4;
-        
+
         /// <summary>
         /// D4 control.
         /// </summary>
@@ -209,7 +211,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox D4;
-        
+
         /// <summary>
         /// E4 control.
         /// </summary>
@@ -218,7 +220,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox E4;
-        
+
         /// <summary>
         /// F4 control.
         /// </summary>
@@ -227,7 +229,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox F4;
-        
+
         /// <summary>
         /// A5 control.
         /// </summary>
@@ -236,7 +238,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox A5;
-        
+
         /// <summary>
         /// B5 control.
         /// </summary>
@@ -245,7 +247,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox B5;
-        
+
         /// <summary>
         /// C5 control.
         /// </summary>
@@ -254,7 +256,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox C5;
-        
+
         /// <summary>
         /// D5 control.
         /// </summary>
@@ -263,7 +265,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox D5;
-        
+
         /// <summary>
         /// E5 control.
         /// </summary>
@@ -272,7 +274,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox E5;
-        
+
         /// <summary>
         /// F5 control.
         /// </summary>
@@ -281,7 +283,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox F5;
-        
+
         /// <summary>
         /// btnProceed control.
         /// </summary>
@@ -290,7 +292,7 @@ namespace MovieBooking.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnProceed;
-        
+
         /// <summary>
         /// hdnMovieID control.
         /// </summary>

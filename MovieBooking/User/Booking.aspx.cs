@@ -59,9 +59,9 @@ namespace MovieBooking.User
                 }
                 if (bookedSeat.EndsWith(","))
                     bookedSeat = bookedSeat.TrimEnd(',');
-                BeMoviesBooking.BeMovieBooking objBe = new BeMoviesBooking.BeMovieBooking();
-                objBe.BeSaveBooking(Convert.ToString(Session["CustomerID"]), hdnMovieID.Value, bookedSeat, DateTime.Now.ToString());
 
+                Session["BookedSeat"] = bookedSeat;
+                Response.Redirect("~/User/Payment.aspx?MovieID=" + hdnMovieID.Value);
 
             }
             catch (Exception ex)
@@ -69,5 +69,156 @@ namespace MovieBooking.User
 
             }
         }
+
+        protected void A1_CheckedChanged(object sender, EventArgs e)
+        {
+            B1.Checked = A1.Checked;
+        }
+
+        protected void B1_CheckedChanged(object sender, EventArgs e)
+        {
+            A1.Checked = B1.Checked;
+        }
+
+        protected void C1_CheckedChanged(object sender, EventArgs e)
+        {
+            D1.Checked = C1.Checked;
+        }
+
+        protected void D1_CheckedChanged(object sender, EventArgs e)
+        {
+            C1.Checked = D1.Checked;
+        }
+
+        protected void E1_CheckedChanged(object sender, EventArgs e)
+        {
+            F1.Checked = E1.Checked;
+        }
+
+        protected void F1_CheckedChanged(object sender, EventArgs e)
+        {
+            E1.Checked = F1.Checked;
+        }
+
+        protected void A2_CheckedChanged(object sender, EventArgs e)
+        {
+            B2.Checked = A2.Checked;
+        }
+
+        protected void B2_CheckedChanged(object sender, EventArgs e)
+        {
+            A2.Checked = B2.Checked;
+        }
+
+        protected void C2_CheckedChanged(object sender, EventArgs e)
+        {
+            D2.Checked = C2.Checked;
+        }
+
+        protected void D2_CheckedChanged(object sender, EventArgs e)
+        {
+            C2.Checked = D2.Checked;
+        }
+
+        protected void E2_CheckedChanged(object sender, EventArgs e)
+        {
+            F2.Checked = E2.Checked;
+        }
+
+        protected void F2_CheckedChanged(object sender, EventArgs e)
+        {
+            E2.Checked = F2.Checked;
+        }
+
+        protected void A3_CheckedChanged(object sender, EventArgs e)
+        {
+            B3.Checked = A3.Checked;
+        }
+
+        protected void B3_CheckedChanged(object sender, EventArgs e)
+        {
+            A3.Checked = B3.Checked;
+        }
+
+        protected void C3_CheckedChanged(object sender, EventArgs e)
+        {
+            D3.Checked = C3.Checked;
+        }
+
+        protected void D3_CheckedChanged(object sender, EventArgs e)
+        {
+            C3.Checked = D3.Checked;
+        }
+
+        protected void E3_CheckedChanged(object sender, EventArgs e)
+        {
+            F3.Checked = E3.Checked;
+        }
+
+        protected void F3_CheckedChanged(object sender, EventArgs e)
+        {
+            E3.Checked = F3.Checked;
+        }
+
+        protected void A4_CheckedChanged(object sender, EventArgs e)
+        {
+            B4.Checked = A4.Checked;
+        }
+
+        protected void B4_CheckedChanged(object sender, EventArgs e)
+        {
+            A4.Checked = B4.Checked;
+        }
+
+        protected void C4_CheckedChanged(object sender, EventArgs e)
+        {
+            D4.Checked = C4.Checked;
+        }
+
+        protected void D4_CheckedChanged(object sender, EventArgs e)
+        {
+            C4.Checked = D4.Checked;
+        }
+
+        protected void E4_CheckedChanged(object sender, EventArgs e)
+        {
+            F4.Checked = E4.Checked;
+        }
+
+        protected void F4_CheckedChanged(object sender, EventArgs e)
+        {
+            E4.Checked = F4.Checked;
+        }
+
+        protected void A5_CheckedChanged(object sender, EventArgs e)
+        {
+            B5.Checked = A5.Checked;
+        }
+
+        protected void B5_CheckedChanged(object sender, EventArgs e)
+        {
+            A5.Checked = B5.Checked;
+        }
+
+        protected void C5_CheckedChanged(object sender, EventArgs e)
+        {
+            D5.Checked = C5.Checked;
+        }
+
+        protected void D5_CheckedChanged(object sender, EventArgs e)
+        {
+            C5.Checked = D5.Checked;
+        }
+
+        protected void E5_CheckedChanged(object sender, EventArgs e)
+        {
+            F5.Checked = E5.Checked;
+        }
+
+        protected void F5_CheckedChanged(object sender, EventArgs e)
+        {
+            E5.Checked = F5.Checked;
+        }
+
     }
 }
