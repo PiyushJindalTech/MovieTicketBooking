@@ -1,4 +1,4 @@
-﻿<%@ Page Tusdsdsdhshhassl jijjndaalsaummaaayyushjalummaar ji piitle="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" EnableEventValidation="false" Inherits="MovieBooking.Account.Register" %>
+﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" EnableEventValidation="false" Inherits="MovieBooking.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <div class="container">
@@ -102,13 +102,17 @@
                 msg += "Enter a valid Email ID\r\n\r\n";
             }
 
+            if (!validateMobile(document.getElementById('<% =txtEmailID.ClientID %>').value.trim())) {
+                msg += "Enter a valid MobileNo. \r\n\r\n";
+            }
+
             if (!validateName(document.getElementById('<% =txtFirstName.ClientID %>').value.trim())) {
                 msg += "Enter a valid first name\r\n\r\n";
             }
 
-            if (!validateName(document.getElementById('<% =txtMiddleName.ClientID %>').value.trim())) {
+          <%--  if (!validateName(document.getElementById('<% =txtMiddleName.ClientID %>').value.trim())) {
                 msg += "Enter a valid middle name\r\n\r\n";
-            }
+            }--%>
 
             if (!validateName(document.getElementById('<% =txtLastName.ClientID %>').value.trim())) {
                 msg += "Enter a valid last name\r\n\r\n";
@@ -116,7 +120,7 @@
 
 
             if (document.getElementById('<% =txtPassword.ClientID %>').value.length <= 6) {
-                msg += "Enter a valid Pasword ID\r\n\r\n";
+                msg += "Enter a valid Pasword.\r\n\r\n";
             }
 
             if (document.getElementById('<% =txtPassword.ClientID %>').value != document.getElementById('<% =txtConfirmPassword.ClientID %>').value) {
