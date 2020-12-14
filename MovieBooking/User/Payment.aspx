@@ -48,7 +48,8 @@
             </div>
             <div class='form-row mt-3'>
                 <div class='col-md-12 form-group'>
-                    <asp:Button ID="btnPay" runat="server" class='form-control btn btn-primary submit-button' OnClick="btnPay_Click" Text="Pay »" />
+                    <asp:Button ID="btnPay" runat="server" class='form-control btn btn-primary submit-button' OnClick="btnPay_Click" Text="Pay »" Visible="false" />
+                    <asp:Button ID="btnProductPay" runat="server" class='form-control btn btn-primary submit-button' OnClick="btnProductPay_Click" Text="Pay »" Visible="false" />
                 </div>
             </div>
             <div class='form-row'>

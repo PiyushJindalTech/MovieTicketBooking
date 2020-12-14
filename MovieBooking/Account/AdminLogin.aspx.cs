@@ -34,7 +34,7 @@ namespace MovieBooking.Account
                         Response.Redirect("~/Admin/Dashboard/CustomerList.aspx");
                     }
                     else
-                        General.DisplaySweetAlertPopup(this, "Alert", "Invalid Credations!, please try again", MessageType.info);
+                        General.DisplaySweetAlertPopup(this, "Alert", "Invalid Credentials!, please try again", MessageType.info);
                 }
                 else
                     General.DisplaySweetAlertPopup(this, "Error", "Server Error!, please try again", MessageType.error);

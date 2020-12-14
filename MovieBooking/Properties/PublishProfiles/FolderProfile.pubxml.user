@@ -11,19 +11,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/10/2020 00:59:49</publishTime>
     </File>
     <File Include="Account/About.aspx">
-      <publishTime>12/10/2020 00:59:49</publishTime>
+      <publishTime>12/12/2020 23:44:31</publishTime>
     </File>
     <File Include="Account/AdminLogin.aspx">
       <publishTime>12/11/2020 05:59:14</publishTime>
     </File>
     <File Include="Account/AdminRegister.aspx">
-      <publishTime>12/11/2020 18:25:59</publishTime>
+      <publishTime>12/12/2020 15:25:07</publishTime>
     </File>
     <File Include="Account/Contact.aspx">
-      <publishTime>12/10/2020 00:59:54</publishTime>
+      <publishTime>12/12/2020 23:43:57</publishTime>
     </File>
     <File Include="Account/Default.aspx">
-      <publishTime>12/10/2020 00:59:54</publishTime>
+      <publishTime>12/13/2020 01:18:52</publishTime>
     </File>
     <File Include="Account/ForgotPassword.aspx">
       <publishTime>12/11/2020 05:15:16</publishTime>
@@ -32,10 +32,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/11/2020 06:01:21</publishTime>
     </File>
     <File Include="Account/Register.aspx">
-      <publishTime>12/12/2020 00:13:40</publishTime>
+      <publishTime>12/12/2020 23:46:52</publishTime>
     </File>
     <File Include="Account/services.aspx">
-      <publishTime>12/10/2020 00:59:54</publishTime>
+      <publishTime>12/12/2020 23:42:45</publishTime>
     </File>
     <File Include="Admin/Admin.Master">
       <publishTime>12/12/2020 02:11:35</publishTime>
@@ -116,10 +116,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/12/2020 01:58:51</publishTime>
     </File>
     <File Include="Admin/Dashboard/AddMovies.aspx">
-      <publishTime>12/10/2020 00:59:49</publishTime>
+      <publishTime>12/13/2020 01:58:24</publishTime>
     </File>
     <File Include="Admin/Dashboard/AddProduct.aspx">
-      <publishTime>12/10/2020 00:59:49</publishTime>
+      <publishTime>12/13/2020 15:04:32</publishTime>
     </File>
     <File Include="Admin/Dashboard/Compose.aspx">
       <publishTime>12/10/2020 00:59:49</publishTime>
@@ -134,7 +134,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/12/2020 00:53:06</publishTime>
     </File>
     <File Include="Admin/Dashboard/ProductList.aspx">
-      <publishTime>12/12/2020 02:14:28</publishTime>
+      <publishTime>12/13/2020 01:33:43</publishTime>
     </File>
     <File Include="Admin/img/AdminLTELogo.png">
       <publishTime>12/10/2020 00:59:49</publishTime>
@@ -5633,10 +5633,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/10/2020 00:59:55</publishTime>
     </File>
     <File Include="bin/BeMoviesBooking.dll">
-      <publishTime>12/11/2020 04:20:58</publishTime>
+      <publishTime>12/13/2020 15:00:21</publishTime>
     </File>
     <File Include="bin/BeMoviesBooking.pdb">
-      <publishTime>12/11/2020 04:20:58</publishTime>
+      <publishTime>12/13/2020 15:00:21</publishTime>
     </File>
     <File Include="bin/DotNetOpenAuth.AspNet.dll">
       <publishTime>12/10/2020 00:59:55</publishTime>
@@ -5669,10 +5669,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/10/2020 00:59:55</publishTime>
     </File>
     <File Include="bin/MovieBooking.dll">
-      <publishTime>12/12/2020 02:52:46</publishTime>
+      <publishTime>12/13/2020 15:08:09</publishTime>
     </File>
     <File Include="bin/MovieBooking.pdb">
-      <publishTime>12/12/2020 02:52:46</publishTime>
+      <publishTime>12/13/2020 15:08:09</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
       <publishTime>07/10/2012 12:07:38</publishTime>
@@ -5911,8 +5911,20 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Images/orderedList9.png">
       <publishTime>12/10/2020 00:59:54</publishTime>
     </File>
+    <File Include="img/punjabi_singer_guru_randhawa.jpg">
+      <publishTime>12/13/2020 00:56:34</publishTime>
+    </File>
+    <File Include="img/Slide1.jpg">
+      <publishTime>11/28/2020 10:33:02</publishTime>
+    </File>
+    <File Include="img/slide2.jpg">
+      <publishTime>11/28/2020 10:36:20</publishTime>
+    </File>
+    <File Include="img/slide3.jpg">
+      <publishTime>11/28/2020 10:38:02</publishTime>
+    </File>
     <File Include="img/undraw_posting_photo.svg">
-      <publishTime>12/10/2020 00:59:54</publishTime>
+      <publishTime>12/10/2020 06:29:56</publishTime>
     </File>
     <File Include="js/contact_me.js">
       <publishTime>12/10/2020 00:59:54</publishTime>
@@ -6044,7 +6056,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/10/2020 00:59:54</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>12/12/2020 02:50:32</publishTime>
+      <publishTime>12/12/2020 23:52:57</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>12/10/2020 00:59:54</publishTime>
@@ -6056,10 +6068,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/12/2020 00:57:32</publishTime>
     </File>
     <File Include="User/Payment.aspx">
-      <publishTime>12/11/2020 03:07:35</publishTime>
+      <publishTime>12/13/2020 01:41:38</publishTime>
     </File>
     <File Include="User/ProductList.aspx">
-      <publishTime>12/12/2020 01:56:45</publishTime>
+      <publishTime>12/13/2020 01:35:39</publishTime>
     </File>
     <File Include="User/Site.Master">
       <publishTime>12/12/2020 02:05:09</publishTime>

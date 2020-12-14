@@ -52,7 +52,11 @@
 
                         <div class="form-group">
                             <label>Product Summary</label>
-                            <asp:TextBox ID="txtProductSummary" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" placeholder="Enter Movie Movie Summary"></asp:TextBox>
+                            <asp:TextBox ID="txtProductSummary" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" placeholder="Enter Product Summary"></asp:TextBox>
+                        </div>
+                         <div class="form-group">
+                            <label>Product Price</label>
+                            <asp:TextBox ID="txtPrice" runat="server" CssClass="form-control" placeholder="Enter Product Price"></asp:TextBox>
                         </div>
 
                         <div class="form-group">

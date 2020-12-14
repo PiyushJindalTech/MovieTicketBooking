@@ -6,12 +6,11 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">About
-      <small>Subheading</small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
+        <a href="default.aspx">Home</a>
       </li>
       <li class="breadcrumb-item active">About</li>
     </ol>
@@ -19,21 +18,23 @@
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+        <img class="img-fluid rounded mb-4" src="http://18.224.31.118/MovieBooking/img/slide2.jpg" alt="">
       </div>
       <div class="col-lg-6">
-        <h2>About Modern Business</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+        <h2>About Movie Theater</h2>
+        <p>We are leading company that provide with the best experience of watching movie and flexible timings with best products promoting movies. 
+OUR TEAM
+We have provided best seating arrangement according to government guidelines and according to the situation of corona..
+We are Taking all precautions as we are providing masks and sanitisation of halls and seats..
+We are happy to serve you</p>
       </div>
     </div>
     <!-- /.row -->
 
     <!-- Team Members -->
-    <h2>Our Team</h2>
+    <h2 style="display:none;">Our Team</h2>
 
-    <div class="row">
+    <div class="row" style="display:none;">
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <img class="card-img-top" src="http://placehold.it/750x450" alt="">
@@ -77,8 +78,8 @@
     <!-- /.row -->
 
     <!-- Our Customers -->
-    <h2>Our Customers</h2>
-    <div class="row">
+    <h2 style="display:none;">Our Customers</h2>
+    <div class="row" style="display:none;">
       <div class="col-lg-2 col-sm-4 mb-4">
         <img class="img-fluid" src="http://placehold.it/500x300" alt="">
       </div>

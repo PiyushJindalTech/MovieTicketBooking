@@ -35,7 +35,7 @@ namespace MovieBooking.Account
                     MovieDirector = txtMovieDirector.Text.Trim(),
                     MovieActors = txtMovieActors.Text.Trim(),
                     MovieSummary = txtMovieSummary.Text.Trim(),
-                    MovieImageName = Convert.ToString(Session["FileName"]),
+                    MovieImageName = hdnImagePath.Value,
                     MovieDuration = timeDuration.ToString()
                 };
                 XmlSerializer xmlserializer = new XmlSerializer(objAddMovie.GetType());
@@ -68,7 +68,7 @@ namespace MovieBooking.Account
                         Random random = new Random();
                         string fileName = flpMovieImage.FileName.Replace(fileExtenstion,"") + "_" + random.Next(1000000) + fileExtenstion;
                         flpMovieImage.SaveAs(movieImagePath + fileName);
-                        Session["FileName"] = "../../MovieImages/" + fileName;
+                        hdnImagePath.Value = "../../MovieImages/" + fileName;
                     }
                     if (flpMovieImage.FileBytes.Length <= 20000)
                     {

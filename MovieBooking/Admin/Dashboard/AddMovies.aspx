@@ -62,5 +62,6 @@
                 </div>
             </div>
         </section>
+        <asp:HiddenField runat="server" ID="hdnImagePath" />
     </form>
 </asp:Content>

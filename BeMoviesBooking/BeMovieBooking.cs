@@ -58,7 +58,56 @@ namespace BeMoviesBooking
             #endregion Member Declaration
             try
             {
-                string tQuery = "Select RID as ProductID, Isnull(CASE WHEN LEN(isnull(Title,'')) > 20 THEN SUBSTRING(Title,0,16) + '...'  ELSE isnull(Title,'') END, '') as 'ProductName', Isnull(Summary,'') as ProductSummary,  Isnull(Rating,'') ProductRating, ISNULL(ImagePath,'') as ImagePath, Isnull(replace(convert(varchar,Modifieddate,106),' ','-'),'') as 'LastModifieddate'  from tblProduct with (nolock) where Status = 1";
+                string tQuery = "Select RID as ProductID, Isnull(CASE WHEN LEN(isnull(Title,'')) > 20 THEN SUBSTRING(Title,0,16) + '...'  ELSE isnull(Title,'') END, '') as 'ProductName', Isnull(Summary,'') as ProductSummary,  Isnull(Rating,'') ProductRating, ISNULL(ImagePath,'') as ImagePath, Isnull(Price,'') as ProductPrice, Isnull(replace(convert(varchar,Modifieddate,106),' ','-'),'') as 'LastModifieddate'  from tblProduct with (nolock) where Status = 1";
+
+                using (objCon = new SqlConnection(ImagineUpline.Global.ConnectionString))
+                {
+                    objDA = new SqlDataAdapter(tQuery, objCon);
+                    objDA.Fill(objDS);
+                    return objDS;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+
+        public DataSet BeGetLatestMovies(ref string _Error)
+        {
+            #region Member Declaration
+            DataSet objDS = new DataSet();
+            SqlConnection objCon = null;
+            SqlDataAdapter objDA = null;
+            #endregion Member Declaration
+            try
+            {
+                string tQuery = "Select Top 3 RID as MovieID, Isnull(CASE WHEN LEN(isnull(Title,'')) > 20 THEN SUBSTRING(Title,0,16) + '...'  ELSE isnull(Title,'') END, '') as 'MovieName', Isnull(Summary,'') as MovieSummary, ISNULL(Actors,'') as MovieActors, Isnull(Rating,'') MovieRating, Isnull(Director,'') as MovieDirector, ISNULL(ImagePath,'') as ImagePath, Isnull(replace(convert(varchar,Modifieddate,106),' ','-'),'') as 'LastModifieddate',Isnull(cast(DATEPART(HOUR, MovieDuration) as nvarchar(5)),'') + 'h ' + Isnull(cast(DATEPART(MINUTE, MovieDuration) as nvarchar(5)),'') + 'M' as MovieDuration  from tblmovie with (nolock) where Status = 1  order by rid desc";
+
+                using (objCon = new SqlConnection(ImagineUpline.Global.ConnectionString))
+                {
+                    objDA = new SqlDataAdapter(tQuery, objCon);
+                    objDA.Fill(objDS);
+                    return objDS;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public DataSet BeGetLatestProducts(ref string _Error)
+        {
+            #region Member Declaration
+            DataSet objDS = new DataSet();
+            SqlConnection objCon = null;
+            SqlDataAdapter objDA = null;
+            #endregion Member Declaration
+            try
+            {
+                string tQuery = "Select Top 6 RID as ProductID, Isnull(CASE WHEN LEN(isnull(Title,'')) > 20 THEN SUBSTRING(Title,0,16) + '...'  ELSE isnull(Title,'') END, '') as 'ProductName', Isnull(Summary,'') as ProductSummary,  Isnull(Rating,'') ProductRating, ISNULL(ImagePath,'') as ImagePath, Isnull(replace(convert(varchar,Modifieddate,106),' ','-'),'') as 'LastModifieddate'  from tblProduct with (nolock) where Status = 1 order by rid desc";
 
                 using (objCon = new SqlConnection(ImagineUpline.Global.ConnectionString))
                 {
@@ -96,6 +145,7 @@ namespace BeMoviesBooking
                 return null;
             }
         }
+
         public string BeAddMovie(string movieDetails)
         {
             string tMovieName = "", tMovieDirector = "", tMovieActors = "", tMovieRating = "", tImagePath = "", tMovieSummary = "", tMovieDuration = "";
@@ -185,7 +235,7 @@ namespace BeMoviesBooking
 
         public string BeAddProduct(string productDetails)
         {
-            string tProductName = "", tProductImageName = "", tProductSummary = "";
+            string tProductName = "", tProductImageName = "", tProductSummary = "", tProductPrice = "";
             XmlDocument objDoc = null;
             XmlNode objNode = null;
             SqlConnection objCon = null;
@@ -210,6 +260,10 @@ namespace BeMoviesBooking
                 if (objNode != null)
                     tProductSummary = objNode.InnerText;
 
+                objNode = objDoc.GetElementsByTagName("ProductPrice")[0];
+                if (objNode != null)
+                    tProductPrice = objNode.InnerText;
+
             }
             catch (Exception ex)
             {
@@ -220,7 +274,7 @@ namespace BeMoviesBooking
             #region DataBase
             try
             {
-                string tQuery = "SELECT Top 0 RID ,Title, ImagePath ,Summary ,[Status], ModifiedDate, CreatedDate, Rating FROM tblProduct   with (nolock)";
+                string tQuery = "SELECT Top 0 RID ,Title, Price, ImagePath ,Summary ,[Status], ModifiedDate, CreatedDate, Rating FROM tblProduct   with (nolock)";
                 using (objCon = new SqlConnection(ImagineUpline.Global.ConnectionString))
                 {
                     objDA = new SqlDataAdapter(tQuery, objCon);
@@ -238,6 +292,7 @@ namespace BeMoviesBooking
                         dr["Rating"] = 5;
                         dr["CreatedDate"] = DateTime.Now.ToString();
                         dr["ModifiedDate"] = DateTime.Now.ToString();
+                        dr["Price"] = tProductPrice;
                         objDS.Tables[0].Rows.Add(dr);
                         objDA.Update(objDS);
                     }

@@ -34,20 +34,17 @@
                                                 <a href="#">
                                                     <asp:Label runat="server" class="card-movie-title" Text='<%# Eval("ProductName") %>'></asp:Label>
                                                 </a>
-                                                <div class="ratings">
-                                                    <span>
-                                                        <asp:Label runat="server" Text='<%# Eval("ProductRating") %>'></asp:Label></span>/5
-                                                </div>
+                                                
                                             </div>
                                             <div class="card-movie-info">
                                                 <div class="product-running-time">
-                                                    <label>Last update</label>
+                                                    <label>Price</label>
 
                                                     <span>
-                                                        <asp:Label runat="server" Text='<%# Eval("LastModifieddate") %>'></asp:Label></span>
+                                                        <asp:Label runat="server" Text='<%# Eval("ProductPrice") %>'></asp:Label></span>
                                                 </div>
                                                 <div class="product-running-time">
-                                                    <label>Running time</label>
+                                                    <label>About Product</label>
                                                     <span>
                                                         <asp:Label runat="server" Text='<%# Eval("ProductSummary") %>'></asp:Label></span>
                                                 </div>

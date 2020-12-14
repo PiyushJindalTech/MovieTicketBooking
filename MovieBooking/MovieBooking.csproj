@@ -1890,6 +1890,10 @@
     <Content Include="Admin\plugins\toastr\toastr.min.css" />
     <Content Include="Admin\plugins\toastr\toastr.min.js" />
     <Content Include="css\admin-login.css" />
+    <Content Include="img\punjabi_singer_guru_randhawa.jpg" />
+    <Content Include="img\Slide1.jpg" />
+    <Content Include="img\slide2.jpg" />
+    <Content Include="img\slide3.jpg" />
     <Content Include="MailTemplates\CandidateOTP.html" />
     <Content Include="MailTemplates\CandForgotPassword.html" />
     <Content Include="MovieImages\advanture.jpg" />

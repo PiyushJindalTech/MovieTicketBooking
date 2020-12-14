@@ -89,7 +89,7 @@
         }
 
         function validateMobile(mobileNo) {
-            var pattern = /^[0-9]{10}/;
+            var pattern = /[0-9]{10}/;
             return pattern.test(String(mobileNo).toLowerCase());
         }
 
@@ -102,13 +102,17 @@
                 msg += "Enter a valid Email ID\r\n\r\n";
             }
 
+            if (!validateMobile(document.getElementById('<% =txtMobileNo.ClientID %>').value.trim())) {
+                msg += "Enter a valid MobileNo. \r\n\r\n";
+            }
+
             if (!validateName(document.getElementById('<% =txtFirstName.ClientID %>').value.trim())) {
                 msg += "Enter a valid first name\r\n\r\n";
             }
 
-            if (!validateName(document.getElementById('<% =txtMiddleName.ClientID %>').value.trim())) {
+          <%--  if (!validateName(document.getElementById('<% =txtMiddleName.ClientID %>').value.trim())) {
                 msg += "Enter a valid middle name\r\n\r\n";
-            }
+            }--%>
 
             if (!validateName(document.getElementById('<% =txtLastName.ClientID %>').value.trim())) {
                 msg += "Enter a valid last name\r\n\r\n";
@@ -116,12 +120,13 @@
 
 
             if (document.getElementById('<% =txtPassword.ClientID %>').value.length <= 6) {
-                msg += "Enter a valid Pasword ID\r\n\r\n";
+                msg += "Enter a valid Pasword.\r\n\r\n";
             }
 
             if (document.getElementById('<% =txtPassword.ClientID %>').value != document.getElementById('<% =txtConfirmPassword.ClientID %>').value) {
                 msg += "Entered password and confirm password is not match.\r\n\r\n";
             }
+
 
             if (msg != '') {
                 alert(msg)

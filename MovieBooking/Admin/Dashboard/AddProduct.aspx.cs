@@ -30,7 +30,7 @@ namespace MovieBooking.Account
                 Product objAddProduct = new Product
                 {
                     ProductName = txtProductName.Text.Trim(),
-                    //MovieDirector = txtMovieDirector.Text.Trim(),
+                    ProductPrice = txtPrice.Text.Trim(),
                     //MovieActors = txtMovieActors.Text.Trim(),
                     ProductSummary = txtProductSummary.Text.Trim(),
                     ProductImageName = Convert.ToString(Session["FileName"]),
@@ -84,6 +84,7 @@ namespace MovieBooking.Account
 
     public class Product
     {
+        public string ProductPrice { get; set; }
         public string ProductName { get; set; }
         public string ProductImageName { get; set; }
         public string ProductSummary { get; set; }

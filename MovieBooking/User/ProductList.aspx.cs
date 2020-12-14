@@ -19,6 +19,8 @@ namespace MovieBooking.User
                 DataSet objDS = new DataSet();
                 BeMovieBooking objMovieBooking = new BeMovieBooking();
                 objDS = objMovieBooking.BeGetProducts(ref _Error);
+                for (int i = 0; i < objDS.Tables[0].Rows.Count; i++)
+                    objDS.Tables[0].Rows[i]["ImagePath"] = Convert.ToString(objDS.Tables[0].Rows[i]["ImagePath"]).Replace("../../", "../");
                 rptProducts.DataSource = objDS;
                 rptProducts.DataBind();
             }

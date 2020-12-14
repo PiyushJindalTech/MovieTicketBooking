@@ -86,10 +86,10 @@
         function validateName(name) {
             var pattern = /^[a-zA-Z'.\s]{1,50}/;
             return pattern.test(String(name).toLowerCase());
-        }
+        }v
 
         function validateMobile(mobileNo) {
-            var pattern = /^[0-9]{10}/;
+            var pattern = /[0-9]{10}/;
             return pattern.test(String(mobileNo).toLowerCase());
         }
 
@@ -102,7 +102,7 @@
                 msg += "Enter a valid Email ID\r\n\r\n";
             }
 
-            if (!validateMobile(document.getElementById('<% =txtEmailID.ClientID %>').value.trim())) {
+            if (!validateMobile(document.getElementById('<% =txtMobileNo.ClientID %>').value.trim())) {
                 msg += "Enter a valid MobileNo. \r\n\r\n";
             }
 

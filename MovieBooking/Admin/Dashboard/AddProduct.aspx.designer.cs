@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MovieBooking.Account {
-    
-    
-    public partial class AddProduct {
-        
+namespace MovieBooking.Account
+{
+
+
+    public partial class AddProduct
+    {
+
         /// <summary>
         /// txtProductName control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtProductName;
-        
+
         /// <summary>
         /// flpProduct control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload flpProduct;
-        
+
         /// <summary>
         /// btnUpload control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpload;
-        
+
         /// <summary>
         /// txtProductSummary control.
         /// </summary>
@@ -47,7 +49,16 @@ namespace MovieBooking.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtProductSummary;
-        
+
+        /// <summary>
+        /// txtPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
+
         /// <summary>
         /// btnSubmit control.
         /// </summary>

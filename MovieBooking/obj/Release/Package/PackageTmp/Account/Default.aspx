@@ -1,227 +1,139 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MovieBooking._Default" %>
 
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
-            <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>First Slide</h3>
-                            <p>This is a description for the first slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second Slide</h3>
-                            <p>This is a description for the second slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Third Slide</h3>
-                            <p>This is a description for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+    <header>
+        <div class="mySlides" style="background-image: url(../img/Slide1.jpg)">
+            <div class="my-slide">
             </div>
-        </header>
+        </div>
+        <div class="mySlides" style="background-image: url(../img/Slide2.jpg)">
+            <div class="my-slide">
+            </div>
+        </div>
+        <div class="mySlides" style="background-image: url(../img/Slide3.jpg)">
+            <div class="my-slide">
+            </div>
+        </div>
+    </header>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-  <!-- Page Content -->
-  <div class="container">
-    <h1 class="my-4">Welcome to Modern Business</h1>
-    <!-- Marketing Icons Section -->
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Movie Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Movie Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Movie Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Portfolio Section -->
-    <h2>Portfolio Heading</h2>
-
-    <div class="row">
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project One</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Two</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Three</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Four</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Five</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Six</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Features Section -->
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Modern Business Features</h2>
-        <p>The Modern Business template by Start Bootstrap includes:</p>
-        <ul>
-          <li>
-            <strong>Bootstrap v4</strong>
-          </li>
-          <li>jQuery</li>
-          <li>Font Awesome</li>
-          <li>Working contact form with validation</li>
-          <li>Unstyled page elements for easy customization</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
-      </div>
-    </div>
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
+    <!-- Page Content -->
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+        <h1 class="my-4">Welcome to Threater Time</h1>
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <asp:Repeater runat="server" ID="rptMovies">
+                <ItemTemplate>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <h4 class="card-header"><%# Eval("MovieName") %></h4>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <img src='<%# Eval("ImagePath") %>' style="width: 100%;" />
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="card-header">Duration: <%# Eval("MovieDuration") %></h6>
+                            </div>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+        <!-- /.row -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <%--<h3>We suggest the following:</h3>
-    <ol class="round">
-        <li class="one">
-            <h5>Getting Started</h5>
-            ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245146">Learn more…</a>
-        </li>
-        <li class="two">
-            <h5>Add NuGet packages and jump-start your coding</h5>
-            NuGet makes it easy to install and update free libraries and tools.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245147">Learn more…</a>
-        </li>
-        <li class="three">
-            <h5>Find Web Hosting</h5>
-            You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
-        </li>
-    </ol>--%>
+        <!-- Portfolio Section -->
+        <h2>Products</h2>
+
+        <div class="row">
+            <asp:Repeater runat="server" ID="rptProducts">
+                <ItemTemplate>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <h4 class="card-header"><%# Eval("ProductName") %></h4>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <img src='<%# Eval("ImagePath") %>' style="width: 100%;" />
+                                </p>
+                            </div>
+                            <%--<div class="card-footer">--%>
+                                <h6 class="card-header"> <%# Eval("ProductSummary") %></h6>
+                            <%--</div>--%>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+        <!-- /.row -->
+        <hr />
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Best Investor of Year</h3>
+                <strong>Mr. Randhawa is best Investor of our project.</strong>
+                <p>
+                    He invested alot in this project in the memory of his parents...
+                   
+                    <br />
+                    Thank you Mr.randhawa
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid rounded" src="../img/punjabi_singer_guru_randhawa.jpg" alt="">
+                <hr>
+
+                <!-- Call to Action Section -->
+                <div class="row mb-4" style="display: none;">
+                    <div class="col-md-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+    </div>
+    <!-- Footer -->
+   <%-- <footer class="py-5 bg-dark" style="margin-left: -15%;">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>--%>
+
+    <!-- Bootstrap core JavaScript -->
+    <style>
+        .mySlides {
+            height: 50vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+        }
+
+        .my-slide {
+            width: 100%
+        }
+    </style>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
 </asp:Content>

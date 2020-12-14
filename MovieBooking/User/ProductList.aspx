@@ -40,19 +40,19 @@
                                     </div>
                                     <div class="card-movie-info">
                                         <div class="product-running-time">
-                                            <label>Last update</label>
+                                            <label>Price</label>
 
                                             <span>
-                                                <asp:Label runat="server" Text='<%# Eval("LastModifieddate") %>'></asp:Label></span>
+                                                <asp:Label runat="server" Text='<%# Eval("ProductPrice") %>'></asp:Label></span>
                                         </div>
                                         <div class="product-running-time">
-                                            <label>Running time</label>
+                                            <label>About Product</label>
                                             <span>
                                                 <asp:Label runat="server" Text='<%# Eval("ProductSummary") %>'></asp:Label></span>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <asp:LinkButton ID="btnBook" runat="server" CssClass="btn btn-primary" Text="Book Now" href='<%# "Booking.aspx?MovieID=" + Eval("ProductID")%>' />
+                                        <asp:LinkButton ID="btnBook" runat="server" CssClass="btn btn-primary" Text="Add To Cart" href='<%# "Payment.aspx?Price=" + Eval("ProductPrice")%>' />
                                     </div>
                                 </div>
                             </div>

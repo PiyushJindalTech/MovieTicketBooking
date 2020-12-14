@@ -6,12 +6,11 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">Contact
-      <small>Subheading</small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
+        <a href="Default.aspx">Home</a>
       </li>
       <li class="breadcrumb-item active">Contact</li>
     </ol>
@@ -27,16 +26,16 @@
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
         <p>
-          3481 Melrose Place
-          <br>Beverly Hills, CA 90210
+          135, mall road majitha road,
+          <br>Amritsar Punjab India
           <br>
         </p>
         <p>
-          <abbr title="Phone">P</abbr>: (123) 456-7890
+          <abbr title="Phone">P</abbr>: (+91) 805-481-4967
         </p>
         <p>
           <abbr title="Email">E</abbr>:
-          <a href="mailto:name@example.com">name@example.com
+          <a href="mailto:srish259@gmail.com">srish259@gmail.com
           </a>
         </p>
         <p>

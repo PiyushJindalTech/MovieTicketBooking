@@ -249,7 +249,7 @@ namespace BeMoviesBooking.DataAccess
             #region DataBase
             try
             {
-                string tQuery = "Select Top 0 RID, FirstName, MiddleName, LastName, MobileNo, EmailID, Password, Status, IsAdmin from c with (nolock)";
+                string tQuery = "Select Top 0 RID, FirstName, MiddleName, LastName, MobileNo, EmailID, Password, Status, IsAdmin from tbl_Login with (nolock)";
                 using (objCon = new SqlConnection(ImagineUpline.Global.ConnectionString))
                 {
                     objDA = new SqlDataAdapter(tQuery, objCon);
